@@ -76,7 +76,7 @@ li, p, label, a{
         }
         @media all and (min-width: $point-md){
             .imagenlogo{
-                content:url("../../Media/Logo.png");
+                content:url("../Media/Logo2.png");
 
             }
             margin-left:10px;
@@ -136,19 +136,19 @@ li, p, label, a{
         
         @media all and (min-width: $point-md){
             .imagebanner1{
-                content:url("../../Media/mercado-forex-divisas.png");
+                content:url("../Media/mercado-forex-divisas.png");
 
             }
             .imagebanner2{
-                content:url("../../Media/cryptobackground.jpg");
+                content:url("../Media/cryptobackground.jpg");
 
             }
             .imagebanner3{
-                content:url("../../Media/stockbackground.jpg");
+                content:url("../Media/stockbackground.jpg");
 
             }
             .imagebanner4{
-                content:url("../../Media/stockbackground2.jpg");
+                content:url("../Media/stockbackground2.jpg");
 
             }    
             img{

@@ -102,7 +102,7 @@ li, p, label, a {
     width: 30%;
   }
   #header .header__logo .imagenlogo {
-    content: url("../../Media/Logo.png");
+    content: url("../Media/Logo2.png");
   }
   #header .header__logo img {
     max-width: 100%;
@@ -158,16 +158,16 @@ li, p, label, a {
 
 @media all and (min-width: 768px) {
   .banner .banner__carousel-item .imagebanner1 {
-    content: url("../../Media/mercado-forex-divisas.png");
+    content: url("../Media/mercado-forex-divisas.png");
   }
   .banner .banner__carousel-item .imagebanner2 {
-    content: url("../../Media/cryptobackground.jpg");
+    content: url("../Media/cryptobackground.jpg");
   }
   .banner .banner__carousel-item .imagebanner3 {
-    content: url("../../Media/stockbackground.jpg");
+    content: url("../Media/stockbackground.jpg");
   }
   .banner .banner__carousel-item .imagebanner4 {
-    content: url("../../Media/stockbackground2.jpg");
+    content: url("../Media/stockbackground2.jpg");
   }
   .banner .banner__carousel-item img {
     width: 100%;
