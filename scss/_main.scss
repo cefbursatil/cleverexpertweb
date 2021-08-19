@@ -70,22 +70,28 @@ li, p, label, a{
     
     .header__logo{
         width: 30%;
-        img{
-            max-width: 50%;  
-            height: auto;  
-        }
-        @media all and (min-width: $point-md){
-            .imagenlogo{
-                content:url("../Media/Logo2.png");
 
-            }
+        max-width: 50%;  
+        height: 50px;  
+
+        background: url("../Media/Icono Azul Circular.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        &:hover {
+            cursor:pointer;
+           }
+        @media all and (min-width: $point-md){
+            background:url("../Media/Logo2.png");
+            background-repeat: no-repeat;
+            background-size: contain;    
+            
             margin-left:10px;
             margin-right: 10px;
-            width: 30%;
-            img{
-                max-width: 100%;  
-                height: auto;  
-            }
+            width: 25%;
+
+            max-width: 100%;  
+            height: 50px;  
+
         }
 
     }
@@ -132,27 +138,14 @@ li, p, label, a{
             top: 0;
             left: 0;
             min-height: 300px;
+            height:100%;
+            width:100%;
         }
         
         @media all and (min-width: $point-md){
-            .imagebanner1{
-                content:url("../Media/mercado-forex-divisas.png");
-
-            }
-            .imagebanner2{
-                content:url("../Media/cryptobackground.jpg");
-
-            }
-            .imagebanner3{
-                content:url("../Media/stockbackground.jpg");
-
-            }
-            .imagebanner4{
-                content:url("../Media/stockbackground2.jpg");
-
-            }    
             img{
                 width:100%;
+                height:unset;
             } 
 
         }
@@ -204,7 +197,8 @@ li, p, label, a{
                         margin-left: -2em; /* same as padding-left set on li */
                         width: 2em; /* same as padding-left set on li */
                       }
-            }
+
+                }
 
             }
     
@@ -296,16 +290,57 @@ li, p, label, a{
     padding:8px;
 	background: rgb(2,0,36);
 	background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(33,64,115,0.9220063025210083) 100%, rgba(255,255,255,1) 100%);
+    .community__grid{
 
-
-    .community__text{
-        padding:20px;
-        p{
-            margin:10px;
-            color: #FFFFFF;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1,2fr);
+        justify-items:center;
+        @media all and (min-width: $point-md){
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: repeat(1,1fr);
+    
         }
-        a{
-            color: #FFFFFF; 
+        ul{
+            &.community__list-feature{
+                list-style-position: inside;
+                font-size: 1.2rem;
+                margin-bottom: 2em;
+                list-style: none;
+                padding: 0;
+                color: $colorbase;
+                li{
+                    margin: 5px;
+                    padding-left: 2em;
+                    color: $colorbase;
+        
+                    &:before {
+                        content: "\f201"; /* FontAwesome Unicode */
+                        font-family: FontAwesome;
+                        color: $colorbase;
+                        display: inline-block;
+                        margin-left: -2em; /* same as padding-left set on li */
+                        width: 2em; /* same as padding-left set on li */
+                    }
+                    &:hover {
+                        color:#c9f310;
+                    }
+                }
+
+            }
+
+        }
+        .community__text{
+            padding:20px;
+            margin-top: auto;
+            margin-bottom: auto;
+            p{
+                margin:10px;
+                color: $colorbase;
+            }
+            a{
+                color: $colorbase; 
+            }
         }
     }
 }
@@ -315,16 +350,32 @@ li, p, label, a{
 
     #contacto__form{
         margin: 20px;
+        .input__ampliado{
+            width:100%;    
+        }
+        input{
+            margin:5px;
+
+            &:focus {
+                font-size: 24px;
+                box-shadow: 0 0 10px #000000;
+                outline: none !important;
+                border:1px solid $colorbase2;
+             }
+             &:hover{
+                border:1px solid $colorbase2;
+             }
+        }
         input:focus {
             font-size: 24px;
             box-shadow: 0 0 10px #000000;
             outline: none !important;
             border:1px solid $colorbase2;
          }
-         input:hover, textarea:hover {
+         textarea:hover {
             border:1px solid $colorbase2;
          }
-         label, input{
+         label{
             margin:5px;
         }
     }

@@ -16,7 +16,7 @@
 <body>
 	<div id="header"> 
 		<nav class="navbar navbar-expand-lg navbar-dark siteCenter">
-		  <div class="header__logo"><a href="index.html"><img class="imagenlogo" src="./Media/Icono Azul Circular.png"></a></div>
+			<div class="header__logo" onclick="location.href='index.html';"></div>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		  </button>
@@ -37,17 +37,14 @@
 		<div class="banner wow animate__animated animate__lightSpeedInLeft">
 			<div class=" carousel slide" data-ride="carousel">
 			  <div class="carousel-inner">
-				<div class="carousel-item banner__carousel-item">
-					<img src="Media/mercado-forex-divisas.png" class="d-block w-100" alt="...">
-				</div>
 				<div class="carousel-item  active  banner__carousel-item">
-				  <img src="Media/cryptobackground.jpg" class="d-block w-100" alt="...">
+					  <img class="imagebanner2"   srcset="./Media/cryptobackground-Mobile.jpg 800w,./Media/cryptobackground.jpg 1000w" class="d-block w-100" >
 				</div>
 				<div class="carousel-item  banner__carousel-item">
-				  <img src="Media/stockbackground.jpg" class="d-block w-100" alt="...">
+					  <img class="imagebanner3" srcset="./Media/stockbackground-Mobile.jpg 800w,./Media/stockbackground.jpg 1000w" class="d-block w-100" >
 				</div>
 				<div class="carousel-item  banner__carousel-item">
-				  <img src="Media/stockbackground2.jpg" class="d-block w-100" alt="...">
+					  <img class="imagebanner4" srcset="./Media/stockbackground2-mobile.jpg 800w,./Media/stockbackground2.jpg 1000w" class="d-block w-100" >
 				</div>
 			  </div>
 			</div>
@@ -60,10 +57,10 @@
 			<h2>Left a message if you want more information about our trading products</h2>
 			<div id="contacto__form"><form action="recibe.html" method="GET" enctype="multipart/form-data"> 
 				<label for="nombre">Name*:</label><br>
-				<input type="type" name="nombre" placeholder="name" id="nombre" required><br>
+				<input type="type" class="input__ampliado" name="nombre" placeholder="name" id="nombre" required><br>
 				<br>
 				<label>Email:</label><br>
-				<input type="email" name="email"><br>
+				<input type="email" class="input__ampliado" name="email"><br>
 				<!--<label>password</label><input type="password" name="pass"><br>-->
 				<br>
 				<label>Financial Assets categories you trade:</label><br>
@@ -79,7 +76,7 @@
 				<br>
 				<label for="experience">Trading Experience:</label><br>
 
-				<select name="experience" id="experience">
+				<select name="experience" class="input__ampliado" id="experience">
 					<option selected disabled>Select your trading Experience:</option>
 					<option value="a">High</option>
 					<option value="b">Low</option>
@@ -87,7 +84,7 @@
 				</select><br>
 				<br>
 				<label for="message">Message:</label><br>
-				<textarea name="mensaje" id="message" cols="30" rows="10"></textarea><br>
+				<textarea name="mensaje" class="input__ampliado" id="message" cols="30" rows="10"></textarea><br>
 				<p>*required data</p><br>
 				<label for="Terms">Accept Terms and Conditions*</label>
 				<input type="checkbox" checked name="Terms" id="Terms" value="1"  required><br><br>
@@ -107,10 +104,11 @@
 			</div>
 			<div id="footer__menu">
 				<h3 class="title2White">Menu:</h3>
-				<p><a href="#value">Value Proposition</a></p>
-				<p><a href="#performance">Performance</a></p>
-				<p><a href="#how">How It Works</a></p>
-				<p><a href="#community">Community</a></p>
+				<p><a href="index.html#value">Value Proposition</a></p>
+				<p><a href="index.html#performance">Performance</a></p>
+				<p><a href="index.html#how">How It Works</a></p>
+				<p><a href="index.html#community">Community</a></p>
+				<p><a href="#contacto">Contact</a></p>
 			</div>	
 			<div id="footer__newsletter">
 				<h4 class="title2White"><a href="https://discord.com/invite/zd5cZWY" target=_blank><u>Suscribe to our Discord</u></a></h4>

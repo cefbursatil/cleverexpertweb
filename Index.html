@@ -18,7 +18,7 @@
 
 	<div id="header"> 
 	<nav class="navbar navbar-expand-lg navbar-dark siteCenter">
-	  <div class="header__logo"><a href="index.html"><img class="imagenlogo" src="./Media/Icono Azul Circular.png"></a></div>
+		<div class="header__logo" onclick="location.href='index.html';"></div>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -39,17 +39,14 @@
 	<div class="banner wow animate__animated animate__lightSpeedInLeft">
 		<div class=" carousel slide" data-ride="carousel">
 		  <div class="carousel-inner">
-		    <div class="carousel-item banner__carousel-item">
-		    	<img class="imagebanner1" src="./Media/mercado-forex-divisas-mobile.png" class="d-block w-100" alt="...">
-		    </div>
 		    <div class="carousel-item  active  banner__carousel-item">
-		      	<img class="imagebanner2" src="./Media/cryptobackground-mobile.jpg" class="d-block w-100" alt="...">
+		      	<img class="imagebanner2"   srcset="./Media/cryptobackground-Mobile.jpg 800w,./Media/cryptobackground.jpg 1000w" class="d-block w-100" >
 		    </div>
 		    <div class="carousel-item  banner__carousel-item">
-		      	<img class="imagebanner3" src="./Media/stockbackground-Mobile.jpg" class="d-block w-100" alt="...">
+		      	<img class="imagebanner3" srcset="./Media/stockbackground-Mobile.jpg 800w,./Media/stockbackground.jpg 1000w" class="d-block w-100" >
 		    </div>
 		    <div class="carousel-item  banner__carousel-item">
-		      	<img class="imagebanner4" src="./Media/stockbackground2-mobile.jpg" class="d-block w-100" alt="...">
+		      	<img class="imagebanner4" srcset="./Media/stockbackground2-mobile.jpg 800w,./Media/stockbackground2.jpg 1000w" class="d-block w-100" >
 		    </div>
 		  </div>
 		</div>
@@ -152,10 +149,23 @@
 		<div class="siteCenter">
 			<p class="titleWhite">Community</p>
 			<h2 class="subtituloWhite">Discord Trading Community, to get advice, research, help and signals</h2>
-			<div class="community__text">
-				<p> Community of long term profitable and consistent traders, which will help you to develop your trading career.</p>
-				<p>Join to our <a href="https://discord.com/invite/zd5cZWY" target=_blank> <u>Discord Community</u></a></p>
-			</div>
+			<div class="community__grid">
+				<div class="community__text">
+					<p> Community of long term profitable and consistent traders, which will help you to develop your trading career.</p>
+					<p>Join to our <a href="https://discord.com/invite/zd5cZWY" target=_blank> <u>Discord Community</u></a></p>
+				</div>
+				<div>
+					<p class="title2White">What can you get?</p>	
+					<ul class="community__list-feature">
+					    <li>Top tier stocks to invest</li>
+					    <li>Tutorial about wour strategies and how to trade the markets</li>
+					    <li>Daily reports about the signal of our indicators</li>
+						<li>Daily reports about the trades of our experts robots</li>	
+					</ul>
+				</div>
+
+
+			</div>		
 		</div>		
 	</section>
 	<div id="footer">

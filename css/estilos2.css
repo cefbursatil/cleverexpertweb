@@ -88,25 +88,27 @@ li, p, label, a {
 
 #header .header__logo {
   width: 30%;
+  max-width: 50%;
+  height: 50px;
+  background: url("../Media/Icono Azul Circular.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-#header .header__logo img {
-  max-width: 50%;
-  height: auto;
+#header .header__logo:hover {
+  cursor: pointer;
 }
 
 @media all and (min-width: 768px) {
   #header .header__logo {
+    background: url("../Media/Logo2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
     margin-left: 10px;
     margin-right: 10px;
-    width: 30%;
-  }
-  #header .header__logo .imagenlogo {
-    content: url("../Media/Logo2.png");
-  }
-  #header .header__logo img {
+    width: 25%;
     max-width: 100%;
-    height: auto;
+    height: 50px;
   }
 }
 
@@ -154,23 +156,14 @@ li, p, label, a {
   top: 0;
   left: 0;
   min-height: 300px;
+  height: 100%;
+  width: 100%;
 }
 
 @media all and (min-width: 768px) {
-  .banner .banner__carousel-item .imagebanner1 {
-    content: url("../Media/mercado-forex-divisas.png");
-  }
-  .banner .banner__carousel-item .imagebanner2 {
-    content: url("../Media/cryptobackground.jpg");
-  }
-  .banner .banner__carousel-item .imagebanner3 {
-    content: url("../Media/stockbackground.jpg");
-  }
-  .banner .banner__carousel-item .imagebanner4 {
-    content: url("../Media/stockbackground2.jpg");
-  }
   .banner .banner__carousel-item img {
     width: 100%;
+    height: unset;
   }
 }
 
@@ -336,16 +329,68 @@ li, p, label, a {
   background: radial-gradient(circle, #020024 0%, rgba(33, 64, 115, 0.922006) 100%, white 100%);
 }
 
-#community .community__text {
-  padding: 20px;
+#community .community__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (2fr)[1];
+      grid-template-rows: repeat(1, 2fr);
+  justify-items: center;
 }
 
-#community .community__text p {
+@media all and (min-width: 768px) {
+  #community .community__grid {
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
+  }
+}
+
+#community .community__grid ul.community__list-feature {
+  list-style-position: inside;
+  font-size: 1.2rem;
+  margin-bottom: 2em;
+  list-style: none;
+  padding: 0;
+  color: #FFFFFF;
+}
+
+#community .community__grid ul.community__list-feature li {
+  margin: 5px;
+  padding-left: 2em;
+  color: #FFFFFF;
+}
+
+#community .community__grid ul.community__list-feature li:before {
+  content: "\f201";
+  /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  color: #FFFFFF;
+  display: inline-block;
+  margin-left: -2em;
+  /* same as padding-left set on li */
+  width: 2em;
+  /* same as padding-left set on li */
+}
+
+#community .community__grid ul.community__list-feature li:hover {
+  color: #c9f310;
+}
+
+#community .community__grid .community__text {
+  padding: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#community .community__grid .community__text p {
   margin: 10px;
   color: #FFFFFF;
 }
 
-#community .community__text a {
+#community .community__grid .community__text a {
   color: #FFFFFF;
 }
 
@@ -357,6 +402,14 @@ li, p, label, a {
   margin: 20px;
 }
 
+#contacto #contacto__form .input__ampliado {
+  width: 100%;
+}
+
+#contacto #contacto__form input {
+  margin: 5px;
+}
+
 #contacto #contacto__form input:focus {
   font-size: 24px;
   -webkit-box-shadow: 0 0 10px #000000;
@@ -365,11 +418,23 @@ li, p, label, a {
   border: 1px solid #213D73;
 }
 
-#contacto #contacto__form input:hover, #contacto #contacto__form textarea:hover {
+#contacto #contacto__form input:hover {
   border: 1px solid #213D73;
 }
 
-#contacto #contacto__form label, #contacto #contacto__form input {
+#contacto #contacto__form input:focus {
+  font-size: 24px;
+  -webkit-box-shadow: 0 0 10px #000000;
+          box-shadow: 0 0 10px #000000;
+  outline: none !important;
+  border: 1px solid #213D73;
+}
+
+#contacto #contacto__form textarea:hover {
+  border: 1px solid #213D73;
+}
+
+#contacto #contacto__form label {
   margin: 5px;
 }
 
