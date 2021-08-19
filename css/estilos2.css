@@ -14,7 +14,10 @@
   padding: 0;
 }
 
-li, p, label, a {
+li,
+p,
+label,
+a {
   /*font-family: 'GothamBook';*/
   font-family: "Merriweather", serif;
   font-weight: 400;
@@ -34,7 +37,7 @@ li, p, label, a {
   font-family: "Merriweather", serif;
   font-weight: 700;
   font-size: 1em;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-bottom: 20px;
   padding-left: 10px;
   margin-bottom: 0px;
@@ -55,7 +58,7 @@ li, p, label, a {
   font-family: "Merriweather", serif;
   font-weight: 700;
   font-size: 2rem;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-top: 20px;
   margin-bottom: 5px;
 }
@@ -74,7 +77,7 @@ li, p, label, a {
   font-family: "Merriweather", serif;
   font-weight: 700;
   font-size: 1.5rem;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 10px;
 }
 
@@ -121,8 +124,8 @@ li, p, label, a {
 }
 
 #header #header__call-action:hover {
-  background-color: #FFFFFF;
-  border: 2px solid #FFFFFF;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
 }
 
 #header #header__call-action a:hover {
@@ -136,7 +139,7 @@ li, p, label, a {
 }
 
 #header .header__menu a {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   text-transform: upper;
 }
@@ -272,11 +275,12 @@ li, p, label, a {
   font-family: "Merriweather", serif;
   font-weight: 400;
   font-size: 0.8rem;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
 }
 
-#performance #performance__info #performance__table #tr, #performance #performance__info #performance__table td {
+#performance #performance__info #performance__table #tr,
+#performance #performance__info #performance__table td {
   width: 150px;
   text-align: center;
   border: 1px;
@@ -464,12 +468,15 @@ li, p, label, a {
   padding-bottom: 10px;
 }
 
-#footer .footer__flex-block p, #footer .footer__flex-block a {
-  color: #FFFFFF;
+#footer .footer__flex-block p,
+#footer .footer__flex-block a {
+  color: #ffffff;
   text-decoration: none;
 }
 
-#footer .footer__flex-block #footer__follow-us, #footer .footer__flex-block #footer__menu, #footer .footer__flex-block #footer__newsletter {
+#footer .footer__flex-block #footer__follow-us,
+#footer .footer__flex-block #footer__menu,
+#footer .footer__flex-block #footer__newsletter {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
